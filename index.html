@@ -1,1 +1,43 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--The CSS styling-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap">
+  </head>
+  <body>
+    <div class="nav-panel">
+      <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/4052/4052984.png" alt="Weather App">
+      </div>
+      <hr>
+      <section class="top-banner">
+        <div class="search">
+          <form>
+            <input type="search" name="city-search" id="city-search" placeholder="Search City...">
+            <button type="submit" value="Search">Search</button>
+          </form>  
+        </div>
+        <span class="msg"></span>
+      </section>
+      
+    </div>
+    <section class="ajax-section">
+      <div class="container">
+        <h2>Search City to See Weather Information</h2>
+        <ul class="cities"></ul>
+      </div>
+    </section>
+<hr id="sec-break">
+    <section class="forecast-sec">
+      <div class="container-forecast">
+          <span class="temp">Click on Forecast to Check Weather Forecast</span>
+      </div>
+    </section>
+    <!--Linking the javascript code-->
+    <script src="main.js"></script>
+  </body>
+</html>
