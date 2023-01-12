@@ -50,7 +50,7 @@ form.addEventListener("submit", e => {
     .then(response => response.json())
     .then(data => {
       const { main, name, sys, weather } = data;
-      console.log(data);
+//       console.log(data);
       const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${
         weather[0]["icon"]
       }.svg`;
@@ -91,7 +91,7 @@ function setForecast(cityName) {
     .then(response => response.json())
     .then(data => {
         const { main, name, sys, weather } = data;
-        console.log(data);
+//         console.log(data);
         const forecastList = data.list;
 
         const holder = document.querySelector(".forecast-sec .container-forecast");
